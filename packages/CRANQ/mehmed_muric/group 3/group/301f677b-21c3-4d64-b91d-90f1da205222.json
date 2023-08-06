@@ -1,0 +1,76 @@
+{
+  "name": "#workspace/mehmed_muric/Group 3/Group",
+  "interface": {
+    "inputs": {
+      "3c63082c-e056-4567-a1e8-b2e37ae602bd": {
+        "type": "any",
+        "name": "start"
+      }
+    },
+    "outputs": {
+      "599058dc-e727-4392-9bc0-7cacfb36e001": {
+        "type": "typeof `timestamp` of `timestamp getter`",
+        "name": "timestamp"
+      },
+      "424641a9-87b3-41a8-b287-427a1c05673c": {
+        "type": "typeof `data` of `expiration`",
+        "name": "data",
+        "description": "Sends store contents."
+      }
+    }
+  },
+  "implementations": {
+    "cranq": {
+      "nodes": {
+        "78b7ddfe-4f20-4c79-88c7-1ce7cc74a75a": {
+          "coordinates": [
+            -0.5,
+            54.5
+          ],
+          "name": "expiration",
+          "prototype": "485b6519-9402-4e78-8599-47ad52c92b2f",
+          "params": {
+            "543f8ad2-7755-44f6-bc9b-e6208c87b15a": "300"
+          }
+        },
+        "d9c91e66-8f9a-4a56-82ca-89b09a09aa12": {
+          "coordinates": [
+            0.5,
+            -54.5
+          ],
+          "name": "timestamp getter",
+          "prototype": "52636841-e2b9-4b13-ad5b-06eb8d1eb701"
+        }
+      },
+      "connections": {},
+      "forwards": {
+        "inputs": {
+          "3c63082c-e056-4567-a1e8-b2e37ae602bd": {
+            "d9c91e66-8f9a-4a56-82ca-89b09a09aa12": {
+              "4181cd34-31ac-4d3b-8d19-3661105e6d1e": {}
+            },
+            "78b7ddfe-4f20-4c79-88c7-1ce7cc74a75a": {
+              "0b28df10-b056-4666-ae14-2357d747f7b9": {}
+            }
+          }
+        },
+        "outputs": {
+          "599058dc-e727-4392-9bc0-7cacfb36e001": {
+            "d9c91e66-8f9a-4a56-82ca-89b09a09aa12": {
+              "b57a2f23-7db9-4007-9c94-c66251abede3": {}
+            }
+          },
+          "424641a9-87b3-41a8-b287-427a1c05673c": {
+            "78b7ddfe-4f20-4c79-88c7-1ce7cc74a75a": {
+              "e7a0df14-dc8c-41bd-8aba-367fdb468ce3": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "iconId": "11e997ab-33d0-473a-aa56-1e2fe4d30d5c",
+  "attributes": {
+    "internal": true
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "name": "#workspace/mehmed_muric/Group",
+  "interface": {
+    "inputs": {
+      "39f880fb-92ce-4ecc-afd6-474dddd4fcf9": {
+        "type": "typeof `start` of `factory compiler`",
+        "name": "start",
+        "description": "Receives a signal that triggers the compilation of the Uniswap V2 Factory contract."
+      },
+      "d98c139b-91ff-48c4-a714-11f2289afe08": {
+        "type": "typeof `config` of `factory deployer`",
+        "name": "config"
+      }
+    },
+    "outputs": {
+      "cd06c620-2a23-4ba6-8987-8eca889e24f7": {
+        "type": "typeof `events` of `factory deployer`",
+        "name": "events",
+        "description": "Muliplexed events.\nUse a Demultiplexer to separate them if needed."
+      },
+      "27f7f326-46e9-4cf8-a443-d2d49926009f": {
+        "type": "typeof `error` of `factory deployer`",
+        "name": "error",
+        "description": "Sends out any error that happened during deployment"
+      },
+      "2b21722d-e294-4d54-9073-a8448708116f": {
+        "type": "string",
+        "name": "factory adress",
+        "description": "Sends out the confirmation(s) of the deployment as received from the chain."
+      },
+      "cd674a45-753e-4171-8ea4-deafd85ac9c3": {
+        "type": "any",
+        "name": "abi"
+      }
+    }
+  },
+  "implementations": {
+    "cranq": {
+      "nodes": {
+        "f9b0ee1a-0fd9-42df-a2f9-e36d6ec0d13f": {
+          "coordinates": [
+            -228,
+            -26
+          ],
+          "name": "factory compiler",
+          "prototype": "d595dd66-f2dc-4e96-b13c-d398b142a9bb"
+        },
+        "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+          "coordinates": [
+            -12,
+            41
+          ],
+          "name": "factory deployer",
+          "prototype": "b821b2e7-fa0d-4c28-a4f0-0b5953931815"
+        },
+        "b9947338-abb0-4a29-8575-ba3361758a69": {
+          "coordinates": [
+            221.25,
+            180.875
+          ],
+          "name": "contract deployment waiter",
+          "prototype": "1e99c75f-d21c-41de-a79c-7080ab8a2883",
+          "params": {
+            "465fe590-d79e-4987-b1c6-a414e01773e2": "2"
+          }
+        },
+        "fcb9ed36-0efa-453d-b3c5-b4cc0297db95": {
+          "coordinates": [
+            29.25,
+            -135.125
+          ],
+          "name": "item getter",
+          "prototype": "857aacdb-326e-4b2e-a261-5197b667e14f",
+          "params": {
+            "23142cc5-6b71-4d69-8c46-cc1cd58793d1": "\"abi\""
+          }
+        }
+      },
+      "connections": {
+        "f9b0ee1a-0fd9-42df-a2f9-e36d6ec0d13f": {
+          "2b7af6d6-aa19-4c89-9cba-5c8b4a8f6fb0": {
+            "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+              "1be1c7f6-ec26-496e-98a6-10b5a8b9b3f9": {}
+            },
+            "fcb9ed36-0efa-453d-b3c5-b4cc0297db95": {
+              "47c56035-5bed-4f91-b7a9-606dedd7a13c": {}
+            }
+          }
+        },
+        "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+          "7863188d-de92-41cc-b5c3-f5326b24ec02": {
+            "b9947338-abb0-4a29-8575-ba3361758a69": {
+              "67c68864-f37a-4967-9ddd-3a87617ac325": {}
+            }
+          }
+        }
+      },
+      "forwards": {
+        "inputs": {
+          "39f880fb-92ce-4ecc-afd6-474dddd4fcf9": {
+            "f9b0ee1a-0fd9-42df-a2f9-e36d6ec0d13f": {
+              "3dd8b80c-d01f-4d47-abff-104f98782ec6": {}
+            }
+          },
+          "d98c139b-91ff-48c4-a714-11f2289afe08": {
+            "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+              "3d76105d-d387-4ebf-8751-5060aadc4c54": {}
+            }
+          }
+        },
+        "outputs": {
+          "cd06c620-2a23-4ba6-8987-8eca889e24f7": {
+            "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+              "ff61a589-bab9-48de-997f-300f29073deb": {}
+            }
+          },
+          "27f7f326-46e9-4cf8-a443-d2d49926009f": {
+            "ec195dc0-f603-4c61-a67d-ce15b21c04e9": {
+              "43026ea7-55a5-4af6-a937-272c8bfaba2a": {}
+            }
+          },
+          "2b21722d-e294-4d54-9073-a8448708116f": {
+            "b9947338-abb0-4a29-8575-ba3361758a69": {
+              "eadf732a-e84a-47e0-a825-95574d2f25ee": {}
+            }
+          },
+          "cd674a45-753e-4171-8ea4-deafd85ac9c3": {
+            "fcb9ed36-0efa-453d-b3c5-b4cc0297db95": {
+              "ebb678af-2bc0-4d06-99dd-6dbb5647ad6a": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "iconId": "abac34e3-c832-4c7b-b045-62f82ebc3ddb",
+  "attributes": {
+    "internal": true
+  }
+}

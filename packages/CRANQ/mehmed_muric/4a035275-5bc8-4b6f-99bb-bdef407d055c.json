@@ -1,0 +1,254 @@
+{
+  "attributes": {
+    "root": true
+  },
+  "description": "uniswap_clone",
+  "interface": {
+    "inputs": {},
+    "outputs": {}
+  },
+  "implementations": {
+    "cranq": {
+      "nodes": {
+        "8253ddd3-0709-42eb-b91e-309f5d3acf43": {
+          "coordinates": [
+            -712,
+            -106
+          ],
+          "description": "",
+          "params": {},
+          "prototype": "d227e22b-e827-4c9d-99db-f96da179bd52",
+          "name": "start"
+        },
+        "99c6fe1f-299b-44ed-993c-3bcd9aedc312": {
+          "coordinates": [
+            -341,
+            250.5
+          ],
+          "name": "Config",
+          "prototype": "485b6519-9402-4e78-8599-47ad52c92b2f",
+          "params": {
+            "543f8ad2-7755-44f6-bc9b-e6208c87b15a": "{\r\n  \"providerUrl\": \"https://eth-goerli.g.alchemy.com/v2/sa3czutF0RJxD3_s50V171cGTY9436yk\",\r\n  \"privateKey\": \"a37909dc179a66d231453951f9ef045bb462c38b2b3229422a828f7fd14df3d1\",\r\n  \"accountAddress\": \"0x034475B1123de5188e16b934189956c03b238573\",\r\n  \"network\": \"goerli\"\r\n}"
+          }
+        },
+        "298845eb-fb71-4736-97f6-4656c9a86ec4": {
+          "coordinates": [
+            55,
+            -127.5
+          ],
+          "name": "multiplexed event logger",
+          "prototype": "6537b272-6360-4b41-9967-d307cab9648e"
+        },
+        "2cae5eb0-e47d-48c2-8678-325435690172": {
+          "coordinates": [
+            -307,
+            -189.5
+          ],
+          "name": "logger (with message)",
+          "prototype": "fafa45e5-b1dd-4348-bcd8-ac6fb25b3d07",
+          "params": {
+            "5773699e-0819-4c74-8282-fb2a9a77b0cf": "\"Factory error\""
+          }
+        },
+        "a624e70c-5304-41a1-84b3-6a5c9af358c6": {
+          "coordinates": [
+            -294,
+            61.5
+          ],
+          "name": "Factory compiler and deployer",
+          "prototype": "8869b550-d332-41df-b90a-7f52f4d6505e"
+        },
+        "d815581b-2124-496a-a91e-df1eae953f46": {
+          "coordinates": [
+            32,
+            166.5
+          ],
+          "name": "Router compiler and deployer",
+          "prototype": "ad96a3fe-9f27-41ed-a174-5ae1b635ddd6"
+        },
+        "5854def6-6f74-4b4d-af9d-f25de211f957": {
+          "coordinates": [
+            165,
+            8.5
+          ],
+          "name": "multiplexed event logger copy",
+          "prototype": "6537b272-6360-4b41-9967-d307cab9648e"
+        },
+        "8db1ea66-9a53-445e-af90-cecf60410e8e": {
+          "coordinates": [
+            159,
+            314.5
+          ],
+          "name": "logger (with message) copy",
+          "prototype": "fafa45e5-b1dd-4348-bcd8-ac6fb25b3d07",
+          "params": {
+            "5773699e-0819-4c74-8282-fb2a9a77b0cf": "\"Router error or deployment error\""
+          }
+        },
+        "11aa08a6-6e89-4b87-920d-5ad7fbdb53d7": {
+          "coordinates": [
+            333.25,
+            166.375
+          ],
+          "name": "logger",
+          "prototype": "1d2a6438-e4bd-4105-b491-cebbb4cae348"
+        },
+        "ecf7a32f-b1f7-433b-b064-a57d77ead8bb": {
+          "coordinates": [
+            416.25,
+            373.375
+          ],
+          "name": "add liquidities",
+          "prototype": "2787a801-6e5c-4a8c-8984-91d9408debe6"
+        },
+        "e08ccb1d-79d2-421f-ad68-3efcdae60b81": {
+          "coordinates": [
+            282.25,
+            263.375
+          ],
+          "name": "syncer",
+          "prototype": "222a7543-3692-4c6d-b027-c422c99b23a1",
+          "params": {
+            "ef31c1e9-cfd5-458b-8d3a-951e3db9c232": "[\"adress\", \"abi\"]"
+          }
+        },
+        "23b3d3da-f4bb-4435-bc08-92c9726aedcd": {
+          "coordinates": [
+            -263.75,
+            388.375
+          ],
+          "name": "store",
+          "prototype": "485b6519-9402-4e78-8599-47ad52c92b2f",
+          "params": {
+            "543f8ad2-7755-44f6-bc9b-e6208c87b15a": "[\n  [\n   {\n     \"address\": \"0xEB029b0B443c10d166376fBc312b8452402aa85A\",\n     \"desiredAmount\": 1000\n   },\n   {\n     \"address\": \"ETH\",\n     \"desiredAmount\": 0.001\n   }\n  ],\n    [\n   {\n     \"address\": \"0xEB029b0B443c10d166376fBc312b8452402aa85A\",\n     \"desiredAmount\": 100\n   },\n   {\n     \"address\": \"0xbEda0598Ed1345967b323DF16182ccBe934DD13C\",\n     \"desiredAmount\": 0.01\n   }\n  ]\n]"
+          }
+        },
+        "93338d21-de2a-4122-9c18-2b139f22cdaa": {
+          "coordinates": [
+            573,
+            176.5
+          ],
+          "name": "logger (with message) copy B",
+          "prototype": "fafa45e5-b1dd-4348-bcd8-ac6fb25b3d07",
+          "params": {
+            "5773699e-0819-4c74-8282-fb2a9a77b0cf": "\"Add liquidities error\""
+          }
+        },
+        "337fbb62-7ed0-48d0-8d59-ea988ed3a2a4": {
+          "coordinates": [
+            658.25,
+            344.375
+          ],
+          "name": "logger copy",
+          "prototype": "1d2a6438-e4bd-4105-b491-cebbb4cae348"
+        }
+      },
+      "connections": {
+        "8253ddd3-0709-42eb-b91e-309f5d3acf43": {
+          "fb159194-7413-4b61-9b9a-f6bbfd3d7977": {
+            "a624e70c-5304-41a1-84b3-6a5c9af358c6": {
+              "39f880fb-92ce-4ecc-afd6-474dddd4fcf9": {}
+            },
+            "99c6fe1f-299b-44ed-993c-3bcd9aedc312": {
+              "0b28df10-b056-4666-ae14-2357d747f7b9": {}
+            },
+            "23b3d3da-f4bb-4435-bc08-92c9726aedcd": {
+              "0b28df10-b056-4666-ae14-2357d747f7b9": {}
+            }
+          }
+        },
+        "99c6fe1f-299b-44ed-993c-3bcd9aedc312": {
+          "e7a0df14-dc8c-41bd-8aba-367fdb468ce3": {
+            "a624e70c-5304-41a1-84b3-6a5c9af358c6": {
+              "d98c139b-91ff-48c4-a714-11f2289afe08": {}
+            },
+            "d815581b-2124-496a-a91e-df1eae953f46": {
+              "f6235938-bcc0-4f8d-bd69-1c4c1ae13fdf": {}
+            },
+            "ecf7a32f-b1f7-433b-b064-a57d77ead8bb": {
+              "8b12e817-0e77-4782-a9c8-1abb094356b3": {}
+            }
+          }
+        },
+        "a624e70c-5304-41a1-84b3-6a5c9af358c6": {
+          "cd06c620-2a23-4ba6-8987-8eca889e24f7": {
+            "298845eb-fb71-4736-97f6-4656c9a86ec4": {
+              "36268fed-37a0-40c5-bd24-79fab399251e": {}
+            }
+          },
+          "27f7f326-46e9-4cf8-a443-d2d49926009f": {
+            "2cae5eb0-e47d-48c2-8678-325435690172": {
+              "b937ea64-339e-46d3-9eff-16cdcaaf7ec4": {}
+            }
+          },
+          "2b21722d-e294-4d54-9073-a8448708116f": {
+            "d815581b-2124-496a-a91e-df1eae953f46": {
+              "04cc3f34-033e-4821-937e-40d32c451730": {}
+            }
+          },
+          "cd674a45-753e-4171-8ea4-deafd85ac9c3": {
+            "d815581b-2124-496a-a91e-df1eae953f46": {
+              "ac39e287-c4cc-41c3-a1b2-a691f733cd1f": {}
+            }
+          }
+        },
+        "d815581b-2124-496a-a91e-df1eae953f46": {
+          "0f72752b-9522-4919-be7b-b767fc5601a1": {
+            "5854def6-6f74-4b4d-af9d-f25de211f957": {
+              "36268fed-37a0-40c5-bd24-79fab399251e": {}
+            }
+          },
+          "ab8f34ee-852a-4651-b7bc-c9fe69ed3111": {
+            "8db1ea66-9a53-445e-af90-cecf60410e8e": {
+              "b937ea64-339e-46d3-9eff-16cdcaaf7ec4": {}
+            }
+          },
+          "7066a1dd-1541-448e-afb5-33f650623ef7": {
+            "11aa08a6-6e89-4b87-920d-5ad7fbdb53d7": {
+              "73758fba-7b0c-4ea6-8fec-0b56982d5451": {}
+            },
+            "e08ccb1d-79d2-421f-ad68-3efcdae60b81": {
+              "adress": {}
+            }
+          },
+          "6a139197-0c5b-433a-bed1-d71b6e9b1284": {
+            "e08ccb1d-79d2-421f-ad68-3efcdae60b81": {
+              "abi": {}
+            }
+          }
+        },
+        "e08ccb1d-79d2-421f-ad68-3efcdae60b81": {
+          "75cde7e3-b158-4836-8bcd-a89e72314ee8": {
+            "ecf7a32f-b1f7-433b-b064-a57d77ead8bb": {
+              "285312e4-31d6-4a1e-abd4-d5544258b5e9": {}
+            }
+          }
+        },
+        "23b3d3da-f4bb-4435-bc08-92c9726aedcd": {
+          "e7a0df14-dc8c-41bd-8aba-367fdb468ce3": {
+            "ecf7a32f-b1f7-433b-b064-a57d77ead8bb": {
+              "6e65146e-9940-4c03-ad5b-647af3f27ed8": {}
+            }
+          }
+        },
+        "ecf7a32f-b1f7-433b-b064-a57d77ead8bb": {
+          "49fadaea-2787-4246-8176-531c90e0ef3c": {
+            "337fbb62-7ed0-48d0-8d59-ea988ed3a2a4": {
+              "73758fba-7b0c-4ea6-8fec-0b56982d5451": {}
+            }
+          },
+          "30ec962a-6948-4ba4-9fc3-6b1281950a1f": {
+            "93338d21-de2a-4122-9c18-2b139f22cdaa": {
+              "b937ea64-339e-46d3-9eff-16cdcaaf7ec4": {}
+            }
+          }
+        }
+      },
+      "forwards": {
+        "inputs": {},
+        "outputs": {}
+      }
+    }
+  },
+  "name": "#workspace/mehmed_muric"
+}
